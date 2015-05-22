@@ -2,17 +2,17 @@ import UIKit
 
 class RGStickyTableView: UITableView {
 
-    var height: CGFloat = 0.0 {
-        didSet {
-            self.imageView.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y - self.height, self.frame.width, self.height)
-            self.contentInset = UIEdgeInsetsMake(self.height, 0, 0, 0)
-        }
-    }
-
     private var imageView = UIImageView() {
         didSet {
             self.imageView.contentMode = UIViewContentMode.ScaleAspectFill
             self.imageView.clipsToBounds = true
+        }
+    }
+
+    var height: CGFloat = 0.0 {
+        didSet {
+            self.imageView.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y - self.height, self.frame.width, self.height)
+            self.contentInset = UIEdgeInsetsMake(self.height, 0, 0, 0)
         }
     }
 
@@ -29,7 +29,16 @@ class RGStickyTableView: UITableView {
         self.addSubview(imageView)
     }
 
-    func scrollViewDidScroll(scrollView: UIScrollView) {
-        println("Sup")
+    // MARK: Delegate methods
+
+    func updateHeaderView(scrollView: UIScrollView) {
+        let yOffset = scrollView.contentOffset.y
+        var imageViewFrame = self.imageView.frame
+        
+        if yOffset < -self.height {
+            imageViewFrame.origin.y = yOffset
+            imageViewFrame.size.height = -yOffset
+            self.imageView.frame = imageViewFrame
+        }
     }
 }

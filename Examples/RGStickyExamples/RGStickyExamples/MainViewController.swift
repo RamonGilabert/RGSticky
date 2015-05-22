@@ -27,6 +27,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
 
+    // MARK: Scroll methods
+
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        self.tableView.updateHeaderView(scrollView)
+    }
+
     // MARK: White status bar
 
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
