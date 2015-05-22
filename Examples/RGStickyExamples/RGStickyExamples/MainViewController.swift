@@ -26,4 +26,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.textLabel?.text = "Sup"
         return cell
     }
+
+    // MARK: White status bar
+
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 }
