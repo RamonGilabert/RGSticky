@@ -13,6 +13,7 @@
 		F6019CBA1B0FAC4100133589 /* RGStickyExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CB91B0FAC4100133589 /* RGStickyExamplesTests.swift */; };
 		F6019CC61B0FADC200133589 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CC51B0FADC200133589 /* MainViewController.swift */; };
 		F6019CC81B0FAE9000133589 /* RGStickyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CC71B0FAE9000133589 /* RGStickyTableView.swift */; };
+		F6019CCB1B0FAF6B00133589 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F6019CB91B0FAC4100133589 /* RGStickyExamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGStickyExamplesTests.swift; sourceTree = "<group>"; };
 		F6019CC51B0FADC200133589 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F6019CC71B0FAE9000133589 /* RGStickyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGStickyTableView.swift; path = ../../../Source/RGStickyTableView.swift; sourceTree = "<group>"; };
+		F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,8 @@
 			children = (
 				F6019CA31B0FAC4100133589 /* AppDelegate.swift */,
 				F6019CC51B0FADC200133589 /* MainViewController.swift */,
-				F6019CC71B0FAE9000133589 /* RGStickyTableView.swift */,
+				F6019CCC1B0FAF6E00133589 /* Manager */,
+				F6019CC91B0FAEA100133589 /* Source */,
 				F6019CC31B0FAC6000133589 /* Resources */,
 				F6019CA11B0FAC4100133589 /* Supporting Files */,
 			);
@@ -126,6 +129,22 @@
 				F6019CAA1B0FAC4100133589 /* Images.xcassets */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		F6019CC91B0FAEA100133589 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F6019CC71B0FAE9000133589 /* RGStickyTableView.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		F6019CCC1B0FAF6E00133589 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +249,7 @@
 				F6019CC61B0FADC200133589 /* MainViewController.swift in Sources */,
 				F6019CC81B0FAE9000133589 /* RGStickyTableView.swift in Sources */,
 				F6019CA41B0FAC4100133589 /* AppDelegate.swift in Sources */,
+				F6019CCB1B0FAF6B00133589 /* LayoutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
