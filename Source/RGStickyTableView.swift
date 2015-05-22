@@ -5,10 +5,11 @@ class RGStickyTableView: UITableView {
     var height: CGFloat = 0.0 {
         didSet {
             self.imageView.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y - self.height, self.frame.width, self.height)
+            self.contentInset = UIEdgeInsetsMake(self.height, 0, 0, 0)
         }
     }
 
-    var imageView = UIImageView() {
+    private var imageView = UIImageView() {
         didSet {
             self.imageView.contentMode = UIViewContentMode.ScaleAspectFill
             self.imageView.clipsToBounds = true
@@ -24,8 +25,7 @@ class RGStickyTableView: UITableView {
     func addStickyImage(image: UIImage, heigth: CGFloat) {
         self.height = heigth
         self.image = image
-        
-        self.contentInset = UIEdgeInsetsMake(heigth, 0, 0, 0)
+
         self.addSubview(imageView)
     }
 
