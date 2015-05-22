@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F6019CA41B0FAC4100133589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CA31B0FAC4100133589 /* AppDelegate.swift */; };
 		F6019CA61B0FAC4100133589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CA51B0FAC4100133589 /* ViewController.swift */; };
-		F6019CA91B0FAC4100133589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6019CA71B0FAC4100133589 /* Main.storyboard */; };
 		F6019CAB1B0FAC4100133589 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6019CAA1B0FAC4100133589 /* Images.xcassets */; };
 		F6019CAE1B0FAC4100133589 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6019CAC1B0FAC4100133589 /* LaunchScreen.xib */; };
 		F6019CBA1B0FAC4100133589 /* RGStickyExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CB91B0FAC4100133589 /* RGStickyExamplesTests.swift */; };
@@ -30,7 +29,6 @@
 		F6019CA21B0FAC4100133589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6019CA31B0FAC4100133589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6019CA51B0FAC4100133589 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F6019CA81B0FAC4100133589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6019CAA1B0FAC4100133589 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F6019CAD1B0FAC4100133589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F6019CB31B0FAC4100133589 /* RGStickyExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGStickyExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,9 +77,7 @@
 			children = (
 				F6019CA31B0FAC4100133589 /* AppDelegate.swift */,
 				F6019CA51B0FAC4100133589 /* ViewController.swift */,
-				F6019CA71B0FAC4100133589 /* Main.storyboard */,
-				F6019CAA1B0FAC4100133589 /* Images.xcassets */,
-				F6019CAC1B0FAC4100133589 /* LaunchScreen.xib */,
+				F6019CC31B0FAC6000133589 /* Resources */,
 				F6019CA11B0FAC4100133589 /* Supporting Files */,
 			);
 			path = RGStickyExamples;
@@ -90,6 +86,7 @@
 		F6019CA11B0FAC4100133589 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F6019CAC1B0FAC4100133589 /* LaunchScreen.xib */,
 				F6019CA21B0FAC4100133589 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +107,22 @@
 				F6019CB81B0FAC4100133589 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6019CC31B0FAC6000133589 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6019CC41B0FAC6900133589 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F6019CC41B0FAC6900133589 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F6019CAA1B0FAC4100133589 /* Images.xcassets */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +205,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6019CA91B0FAC4100133589 /* Main.storyboard in Resources */,
 				F6019CAE1B0FAC4100133589 /* LaunchScreen.xib in Resources */,
 				F6019CAB1B0FAC4100133589 /* Images.xcassets in Resources */,
 			);
@@ -236,14 +248,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F6019CA71B0FAC4100133589 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6019CA81B0FAC4100133589 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F6019CAC1B0FAC4100133589 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
