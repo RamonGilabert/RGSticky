@@ -13,6 +13,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: Constant.Information.ReusableIdentifier)
         self.tableView.addStickyImage(UIImage(named: "header-sticky-image")!, heigth: Constant.Size.DeviceHeight/2)
         self.view.addSubview(self.tableView)
+        self.tableView.image = UIImage(named: "header-sticky-image-two")!
     }
 
     // MARK: TableView delegate methods
