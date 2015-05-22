@@ -9,7 +9,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         self.tableView.frame = CGRectMake(0, 0, Constant.Size.DeviceWidth, Constant.Size.DeviceHeight)
         self.tableView.delegate = self
+        self.tableView.dataSource = self
         self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: Constant.Information.ReusableIdentifier)
+        self.view.addSubview(self.tableView)
     }
 
     // MARK: TableView delegate methods

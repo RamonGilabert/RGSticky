@@ -15,23 +15,12 @@
 		F6019CCB1B0FAF6B00133589 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F6019CB41B0FAC4100133589 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F6019C961B0FAC4100133589 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F6019C9D1B0FAC4100133589;
-			remoteInfo = RGStickyExamples;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		F6019C9E1B0FAC4100133589 /* RGStickyExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGStickyExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6019CA21B0FAC4100133589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6019CA31B0FAC4100133589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6019CAA1B0FAC4100133589 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F6019CAD1B0FAC4100133589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F6019CB31B0FAC4100133589 /* RGStickyExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGStickyExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6019CC51B0FADC200133589 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F6019CC71B0FAE9000133589 /* RGStickyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGStickyTableView.swift; path = ../../../Source/RGStickyTableView.swift; sourceTree = "<group>"; };
 		F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
@@ -39,13 +28,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		F6019C9B1B0FAC4100133589 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F6019CB01B0FAC4100133589 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				F6019C9E1B0FAC4100133589 /* RGStickyExamples.app */,
-				F6019CB31B0FAC4100133589 /* RGStickyExamplesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,24 +127,6 @@
 			productReference = F6019C9E1B0FAC4100133589 /* RGStickyExamples.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F6019CB21B0FAC4100133589 /* RGStickyExamplesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F6019CC01B0FAC4100133589 /* Build configuration list for PBXNativeTarget "RGStickyExamplesTests" */;
-			buildPhases = (
-				F6019CAF1B0FAC4100133589 /* Sources */,
-				F6019CB01B0FAC4100133589 /* Frameworks */,
-				F6019CB11B0FAC4100133589 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F6019CB51B0FAC4100133589 /* PBXTargetDependency */,
-			);
-			name = RGStickyExamplesTests;
-			productName = RGStickyExamplesTests;
-			productReference = F6019CB31B0FAC4100133589 /* RGStickyExamplesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,10 +138,6 @@
 				TargetAttributes = {
 					F6019C9D1B0FAC4100133589 = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					F6019CB21B0FAC4100133589 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = F6019C9D1B0FAC4100133589;
 					};
 				};
 			};
@@ -196,7 +155,6 @@
 			projectRoot = "";
 			targets = (
 				F6019C9D1B0FAC4100133589 /* RGStickyExamples */,
-				F6019CB21B0FAC4100133589 /* RGStickyExamplesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,13 +166,6 @@
 			files = (
 				F6019CAE1B0FAC4100133589 /* LaunchScreen.xib in Resources */,
 				F6019CAB1B0FAC4100133589 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F6019CB11B0FAC4100133589 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,22 +183,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6019CAF1B0FAC4100133589 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F6019CB51B0FAC4100133589 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F6019C9D1B0FAC4100133589 /* RGStickyExamples */;
-			targetProxy = F6019CB41B0FAC4100133589 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F6019CAC1B0FAC4100133589 /* LaunchScreen.xib */ = {
@@ -297,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -335,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -362,40 +298,6 @@
 			};
 			name = Release;
 		};
-		F6019CC11B0FAC4100133589 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RGStickyExamplesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RGStickyExamples.app/RGStickyExamples";
-			};
-			name = Debug;
-		};
-		F6019CC21B0FAC4100133589 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RGStickyExamplesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RGStickyExamples.app/RGStickyExamples";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -413,14 +315,6 @@
 			buildConfigurations = (
 				F6019CBE1B0FAC4100133589 /* Debug */,
 				F6019CBF1B0FAC4100133589 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		F6019CC01B0FAC4100133589 /* Build configuration list for PBXNativeTarget "RGStickyExamplesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F6019CC11B0FAC4100133589 /* Debug */,
-				F6019CC21B0FAC4100133589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
