@@ -10,7 +10,6 @@
 		F6019CA41B0FAC4100133589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CA31B0FAC4100133589 /* AppDelegate.swift */; };
 		F6019CAB1B0FAC4100133589 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6019CAA1B0FAC4100133589 /* Images.xcassets */; };
 		F6019CAE1B0FAC4100133589 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6019CAC1B0FAC4100133589 /* LaunchScreen.xib */; };
-		F6019CBA1B0FAC4100133589 /* RGStickyExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CB91B0FAC4100133589 /* RGStickyExamplesTests.swift */; };
 		F6019CC61B0FADC200133589 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CC51B0FADC200133589 /* MainViewController.swift */; };
 		F6019CC81B0FAE9000133589 /* RGStickyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CC71B0FAE9000133589 /* RGStickyTableView.swift */; };
 		F6019CCB1B0FAF6B00133589 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */; };
@@ -33,8 +32,6 @@
 		F6019CAA1B0FAC4100133589 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F6019CAD1B0FAC4100133589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F6019CB31B0FAC4100133589 /* RGStickyExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGStickyExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6019CB81B0FAC4100133589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6019CB91B0FAC4100133589 /* RGStickyExamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGStickyExamplesTests.swift; sourceTree = "<group>"; };
 		F6019CC51B0FADC200133589 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F6019CC71B0FAE9000133589 /* RGStickyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGStickyTableView.swift; path = ../../../Source/RGStickyTableView.swift; sourceTree = "<group>"; };
 		F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
@@ -62,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				F6019CA01B0FAC4100133589 /* RGStickyExamples */,
-				F6019CB61B0FAC4100133589 /* RGStickyExamplesTests */,
 				F6019C9F1B0FAC4100133589 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,23 +90,6 @@
 			children = (
 				F6019CAC1B0FAC4100133589 /* LaunchScreen.xib */,
 				F6019CA21B0FAC4100133589 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F6019CB61B0FAC4100133589 /* RGStickyExamplesTests */ = {
-			isa = PBXGroup;
-			children = (
-				F6019CB91B0FAC4100133589 /* RGStickyExamplesTests.swift */,
-				F6019CB71B0FAC4100133589 /* Supporting Files */,
-			);
-			path = RGStickyExamplesTests;
-			sourceTree = "<group>";
-		};
-		F6019CB71B0FAC4100133589 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F6019CB81B0FAC4100133589 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -257,7 +236,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6019CBA1B0FAC4100133589 /* RGStickyExamplesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
