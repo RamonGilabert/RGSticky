@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>454D6E83-910B-488F-8C65-51E6AF841433</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7CA7921BB16E8C4330BE4E676173512D33030E2E</key>
+		<string>https://github.com/RamonGilabert/RGSticky.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Examples/RGStickyExamples/RGStickyExamples.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7CA7921BB16E8C4330BE4E676173512D33030E2E</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RamonGilabert/RGSticky.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7CA7921BB16E8C4330BE4E676173512D33030E2E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7CA7921BB16E8C4330BE4E676173512D33030E2E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RGSticky</string>
+		</dict>
+	</array>
+</dict>
+</plist>
