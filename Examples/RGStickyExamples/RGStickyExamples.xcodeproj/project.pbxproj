@@ -13,6 +13,7 @@
 		F6019CC61B0FADC200133589 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CC51B0FADC200133589 /* MainViewController.swift */; };
 		F6019CC81B0FAE9000133589 /* RGStickyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CC71B0FAE9000133589 /* RGStickyTableView.swift */; };
 		F6019CCB1B0FAF6B00133589 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */; };
+		F6C26BEA1B26A5520022A0FE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C26BE91B26A5520022A0FE /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F6019CC51B0FADC200133589 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F6019CC71B0FAE9000133589 /* RGStickyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGStickyTableView.swift; path = ../../../Source/RGStickyTableView.swift; sourceTree = "<group>"; };
 		F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
+		F6C26BE91B26A5520022A0FE /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */,
+				F6C26BE91B26A5520022A0FE /* DataManager.swift */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6019CC61B0FADC200133589 /* MainViewController.swift in Sources */,
+				F6C26BEA1B26A5520022A0FE /* DataManager.swift in Sources */,
 				F6019CC81B0FAE9000133589 /* RGStickyTableView.swift in Sources */,
 				F6019CA41B0FAC4100133589 /* AppDelegate.swift in Sources */,
 				F6019CCB1B0FAF6B00133589 /* LayoutManager.swift in Sources */,
@@ -317,6 +321,7 @@
 				F6019CBF1B0FAC4100133589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
