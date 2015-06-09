@@ -36,9 +36,10 @@ class RGStickyTableView: UITableView {
         var imageViewFrame = self.imageView.frame
         
         if yOffset < -self.height {
-            imageViewFrame.origin.y = yOffset
-            imageViewFrame.size.height = -yOffset
-            self.imageView.frame = imageViewFrame
+            self.imageView.frame.origin.y = yOffset
+            self.imageView.frame.size.width = -(Constant.Size.DeviceWidth * (yOffset / self.height))
+            self.imageView.frame.origin.x = (Constant.Size.DeviceWidth - self.imageView.frame.size.width) / 2
+            self.imageView.frame.size.height = -yOffset
         }
     }
 }
