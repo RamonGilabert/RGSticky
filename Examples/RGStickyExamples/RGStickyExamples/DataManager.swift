@@ -43,5 +43,15 @@ struct Data {
 
     // MARK: Arrays
 
-    static let Dictionary = {}
+    static let Dictionaries = [
+        ["photo": OneImage, "name": OneName, "comment": OneComment],
+        ["photo": TwoImage, "name": TwoName, "comment": TwoComment],
+        ["photo": ThreeImage, "name": ThreeName, "comment": ThreeComment],
+        ["photo": FourImage, "name": FourName, "comment": FourComment],
+        ["photo": FiveImage, "name": FiveName, "comment": FiveComment],
+        ["photo": SixImage, "name": SixName, "comment": SixComment],
+        ["photo": SevenImage, "name": SevenName, "comment": SevenComment],
+        ["photo": EightImage, "name": EightName, "comment": EightComment],
+        ["photo": NineImage, "name": NineName, "comment": NineComment],
+        ["photo": TenImage, "name": TenName, "comment": TenComment]]
 }
