@@ -13,6 +13,7 @@
 		F6019CC61B0FADC200133589 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CC51B0FADC200133589 /* MainViewController.swift */; };
 		F6019CC81B0FAE9000133589 /* RGStickyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CC71B0FAE9000133589 /* RGStickyTableView.swift */; };
 		F6019CCB1B0FAF6B00133589 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */; };
+		F6955FDA1B28B416009AFA9B /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955FD91B28B416009AFA9B /* CommentsTableViewCell.swift */; };
 		F6C26BEA1B26A5520022A0FE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C26BE91B26A5520022A0FE /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		F6019CC51B0FADC200133589 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F6019CC71B0FAE9000133589 /* RGStickyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGStickyTableView.swift; path = ../../../Source/RGStickyTableView.swift; sourceTree = "<group>"; };
 		F6019CCA1B0FAF6B00133589 /* LayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
+		F6955FD91B28B416009AFA9B /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
 		F6C26BE91B26A5520022A0FE /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				F6019CA31B0FAC4100133589 /* AppDelegate.swift */,
 				F6019CC51B0FADC200133589 /* MainViewController.swift */,
 				F6019CCC1B0FAF6E00133589 /* Manager */,
+				F6955FD61B28B36E009AFA9B /* Custom cells */,
 				F6019CC91B0FAEA100133589 /* Source */,
 				F6019CC31B0FAC6000133589 /* Resources */,
 				F6019CA11B0FAC4100133589 /* Supporting Files */,
@@ -108,6 +111,14 @@
 				F6C26BE91B26A5520022A0FE /* DataManager.swift */,
 			);
 			name = Manager;
+			sourceTree = "<group>";
+		};
+		F6955FD61B28B36E009AFA9B /* Custom cells */ = {
+			isa = PBXGroup;
+			children = (
+				F6955FD91B28B416009AFA9B /* CommentsTableViewCell.swift */,
+			);
+			name = "Custom cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6019CC61B0FADC200133589 /* MainViewController.swift in Sources */,
+				F6955FDA1B28B416009AFA9B /* CommentsTableViewCell.swift in Sources */,
 				F6C26BEA1B26A5520022A0FE /* DataManager.swift in Sources */,
 				F6019CC81B0FAE9000133589 /* RGStickyTableView.swift in Sources */,
 				F6019CA41B0FAC4100133589 /* AppDelegate.swift in Sources */,
