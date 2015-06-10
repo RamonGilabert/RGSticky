@@ -1,6 +1,6 @@
 import Foundation
 
-struct Data {
+struct DataManager {
 
     // MARK: Images
 
@@ -43,7 +43,7 @@ struct Data {
 
     // MARK: Arrays
 
-    static let Dictionaries = [
+    static let Dictionary = [
         ["photo": OneImage, "name": OneName, "comment": OneComment],
         ["photo": TwoImage, "name": TwoName, "comment": TwoComment],
         ["photo": ThreeImage, "name": ThreeName, "comment": ThreeComment],

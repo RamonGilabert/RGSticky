@@ -3,6 +3,7 @@ import UIKit
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let tableView = RGStickyTableView()
+    let arrayOfDictionaries = DataManager.Dictionary
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: TableView delegate methods
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.arrayOfDictionaries.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
