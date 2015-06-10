@@ -48,7 +48,7 @@ class CommentsTableViewCell: UITableViewCell {
 
         self.commentLabel.text = comment
         self.commentLabel.sizeToFit()
-        self.commentLabel.frame = CGRectMake(self.userNameLabel.frame.origin.x, self.userNameLabel.frame.origin.y + self.userNameLabel.frame.height + 5, self.commentLabel.frame.width, self.commentLabel.frame.height)
+        self.commentLabel.frame = CGRectMake(self.userNameLabel.frame.origin.x, self.userNameLabel.frame.origin.y + self.userNameLabel.frame.height, self.commentLabel.frame.width, self.commentLabel.frame.height)
     }
 
     // MARK: Selected cell
