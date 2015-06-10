@@ -17,12 +17,14 @@ class CommentsTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         self.profileImageView.frame = CGRectMake(5, 5, 85, 85)
+        self.profileImageView.contentMode = UIViewContentMode.ScaleAspectFill
 
         self.userNameLabel.frame = CGRectMake(0, 0, 0, 0)
         self.userNameLabel.font = UIFont(name: "Helvetica-Bold", size: 20)
 
         self.commentLabel.frame = CGRectMake(0, 0, 0, 0)
         self.commentLabel.font = UIFont(name: "Helvetica", size: 18)
+        self.commentLabel.numberOfLines = 10
 
         self.addSubview(self.profileImageView)
         self.addSubview(self.userNameLabel)
@@ -42,11 +44,11 @@ class CommentsTableViewCell: UITableViewCell {
 
         self.userNameLabel.text = userName
         self.userNameLabel.sizeToFit()
-        self.userNameLabel.frame = CGRectMake(0, 0, 0, 0)
+        self.userNameLabel.frame = CGRectMake(self.profileImageView.frame.origin.x + self.profileImageView.frame.width + 5, 5, self.userNameLabel.frame.width, self.userNameLabel.frame.height)
 
         self.commentLabel.text = comment
         self.commentLabel.sizeToFit()
-        self.commentLabel.frame = CGRectMake(0, 0, 0, 0)
+        self.commentLabel.frame = CGRectMake(self.userNameLabel.frame.origin.x, self.userNameLabel.frame.origin.y + self.userNameLabel.frame.height + 5, self.userNameLabel.frame.width, self.commentLabel.frame.height)
     }
 
     // MARK: Selected cell

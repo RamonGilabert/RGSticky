@@ -24,7 +24,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(Constant.Information.ReusableIdentifier) as! UITableViewCell
-        cell.textLabel?.text = "Sup"
+        let dictionary = self.array
         return cell
     }
 
