@@ -16,14 +16,14 @@ class CommentsTableViewCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-        self.profileImageView.frame = CGRectMake(5, 5, 85, 85)
+        self.profileImageView.frame = CGRectMake(5, 5, 65, 65)
         self.profileImageView.contentMode = UIViewContentMode.ScaleAspectFill
 
-        self.userNameLabel.frame = CGRectMake(0, 0, 0, 0)
-        self.userNameLabel.font = UIFont(name: "Helvetica-Bold", size: 20)
+        self.userNameLabel.frame = CGRectMake(75, 0, 0, 0)
+        self.userNameLabel.font = UIFont(name: "Helvetica-Bold", size: 17)
 
-        self.commentLabel.frame = CGRectMake(0, 0, 0, 0)
-        self.commentLabel.font = UIFont(name: "Helvetica", size: 18)
+        self.commentLabel.frame = CGRectMake(75, 0, Constant.Size.DeviceWidth - 80, 0)
+        self.commentLabel.font = UIFont(name: "Helvetica", size: 16)
         self.commentLabel.numberOfLines = 10
 
         self.addSubview(self.profileImageView)
@@ -48,7 +48,7 @@ class CommentsTableViewCell: UITableViewCell {
 
         self.commentLabel.text = comment
         self.commentLabel.sizeToFit()
-        self.commentLabel.frame = CGRectMake(self.userNameLabel.frame.origin.x, self.userNameLabel.frame.origin.y + self.userNameLabel.frame.height + 5, self.userNameLabel.frame.width, self.commentLabel.frame.height)
+        self.commentLabel.frame = CGRectMake(self.userNameLabel.frame.origin.x, self.userNameLabel.frame.origin.y + self.userNameLabel.frame.height + 5, self.commentLabel.frame.width, self.commentLabel.frame.height)
     }
 
     // MARK: Selected cell

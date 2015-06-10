@@ -11,7 +11,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.frame = CGRectMake(0, 0, Constant.Size.DeviceWidth, Constant.Size.DeviceHeight)
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: Constant.Information.ReusableIdentifier)
+        self.tableView.registerClass(CommentsTableViewCell.classForCoder(), forCellReuseIdentifier: Constant.Information.ReusableIdentifier)
         self.tableView.addStickyImage(UIImage(named: "header-sticky-image")!, heigth: Constant.Size.DeviceHeight/2)
         self.view.addSubview(self.tableView)
     }
@@ -23,8 +23,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(Constant.Information.ReusableIdentifier) as! UITableViewCell
-        let dictionary = self.array
+        let cell = tableView.dequeueReusableCellWithIdentifier(Constant.Information.ReusableIdentifier) as! CommentsTableViewCell
+        let dictionary = self.arrayOfDictionaries[indexPath.row]
+        cell.configureCell(dictionary["photo"]!, userName: dictionary["name"]!, comment: dictionary["comment"]!)
         return cell
     }
 
