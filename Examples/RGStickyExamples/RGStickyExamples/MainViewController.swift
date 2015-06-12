@@ -51,7 +51,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: Scroll methods
 
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        self.tableView.updateHeaderView(scrollView, view: self.view)
+        self.tableView.updateHeaderView(scrollView, height: Constant.Size.DeviceHeight/7, view: self.view)
     }
 
     // MARK: White status bar

@@ -32,7 +32,11 @@ class RGStickyTableView: UITableView {
 
     // MARK: Delegate methods
 
-    func updateHeaderView(scrollView: UIScrollView, view: UIView) {
+    // TODO: - Add shadow now in the image.
+    // TODO: - Think about new transitions.
+    // TODO: - Implement the custom height you want.
+
+    func updateHeaderView(scrollView: UIScrollView, height: CGFloat, view: UIView) {
         let yOffset = scrollView.contentOffset.y
         self.imageView.contentMode = UIViewContentMode.ScaleAspectFill
         self.imageView.clipsToBounds = true
