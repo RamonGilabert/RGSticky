@@ -32,7 +32,7 @@ class RGStickyTableView: UITableView {
 
     // MARK: Delegate methods
 
-    func updateHeaderView(scrollView: UIScrollView) {
+    func updateHeaderView(scrollView: UIScrollView, view: UIView) {
         let yOffset = scrollView.contentOffset.y
         self.imageView.contentMode = UIViewContentMode.ScaleAspectFill
         self.imageView.clipsToBounds = true
@@ -45,9 +45,14 @@ class RGStickyTableView: UITableView {
         } else if yOffset > -self.height/3 && self.imageView.isDescendantOfView(self) {
             self.imageView.removeFromSuperview()
             self.alternativeImageView = self.imageView
-            self.alternativeImageView.frame.size.height = self.height/3
-            
-        } else if yOffset > -self.height {
+            self.alternativeImageView.image = self.imageView.image
+            self.alternativeImageView.frame = CGRectMake(0, 0, Constant.Size.DeviceWidth, self.height/3)
+            view.addSubview(self.alternativeImageView)
+        } else if yOffset < -self.height/3 && !self.imageView.isDescendantOfView(self) {
+            self.alternativeImageView.removeFromSuperview()
+            self.imageView.frame = CGRectMake((Constant.Size.DeviceWidth - self.imageView.frame.size.width) / 2, -self.height/3, Constant.Size.DeviceWidth, self.height/3)
+            self.addSubview(self.imageView)
+        } else if yOffset > -self.height && self.imageView.isDescendantOfView(self) {
             self.imageView.frame.origin.y = yOffset
             self.imageView.frame.size.height = -yOffset
         }
