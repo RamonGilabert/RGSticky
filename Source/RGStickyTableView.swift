@@ -2,10 +2,11 @@ import UIKit
 
 class RGStickyTableView: UITableView {
 
+    private var alternativeImageView = UIImageView()
+
     private var imageView = UIImageView() {
         didSet {
-            self.imageView.contentMode = UIViewContentMode.ScaleAspectFill
-            self.imageView.clipsToBounds = true
+
         }
     }
 
@@ -33,15 +34,22 @@ class RGStickyTableView: UITableView {
 
     func updateHeaderView(scrollView: UIScrollView) {
         let yOffset = scrollView.contentOffset.y
-        var imageViewFrame = self.imageView.frame
+        self.imageView.contentMode = UIViewContentMode.ScaleAspectFill
+        self.imageView.clipsToBounds = true
         
-        if yOffset < -self.height/3 {
+        if yOffset < -self.height {
             self.imageView.frame.origin.y = yOffset
             self.imageView.frame.size.width = -(Constant.Size.DeviceWidth * (yOffset / self.height))
             self.imageView.frame.origin.x = (Constant.Size.DeviceWidth - self.imageView.frame.size.width) / 2
             self.imageView.frame.size.height = -yOffset
-        } else if yOffset > -self.height/3 {
-
+        } else if yOffset > -self.height/3 && self.imageView.isDescendantOfView(self) {
+            self.imageView.removeFromSuperview()
+            self.alternativeImageView = self.imageView
+            self.alternativeImageView.frame.size.height = self.height/3
+            
+        } else if yOffset > -self.height {
+            self.imageView.frame.origin.y = yOffset
+            self.imageView.frame.size.height = -yOffset
         }
     }
 }
